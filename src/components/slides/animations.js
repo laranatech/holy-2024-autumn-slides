@@ -12,7 +12,12 @@ class AnimationsSlideComponent extends SlideComponent {
 				layout({
 					style: ['column', 'gap_1', { size: 9 }],
 					children: [
-						throbber({ model: 'throbber' }),
+						layout({
+							style: ['card', 'p_5'],
+							children: [
+								throbber({ model: 'throbber' }),
+							],
+						}),
 					],
 				}),
 			],

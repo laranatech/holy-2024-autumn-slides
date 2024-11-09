@@ -11,7 +11,7 @@ class MoneySlideComponent extends SlideComponent {
 					children: [
 						layout({}),
 						layout({
-							style: ['column', 'hug'],
+							style: ['card', 'p_5', 'column', 'hug'],
 							children: [
 								image({
 									style: { width: 680, aspectRatio: 680 / 661 },
@@ -21,7 +21,7 @@ class MoneySlideComponent extends SlideComponent {
 							],
 						}),
 						layout({
-							style: ['column', 'hug'],
+							style: ['card', 'p_5', 'column', 'hug'],
 							children: [
 								image({
 									style: { width: 680, aspectRatio: 680 / 661 },

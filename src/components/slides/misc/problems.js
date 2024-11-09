@@ -15,7 +15,7 @@ class ProblemsComponent extends BaseComponent {
 			children: [
 				layout({}),
 				list({
-					style: { gap: 'var:u3' },
+					style: 'gap_5',
 					model: 'problems',
 					template: (problem, i) => {
 						return layout({

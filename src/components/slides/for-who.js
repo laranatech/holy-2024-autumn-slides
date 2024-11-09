@@ -24,10 +24,26 @@ class ForWhoSlideComponent extends ListNContentSlideComponent {
 		const rightPart = {
 			atms: layout({
 				style: ['card', 'p_5'],
-			}), // TODO: breaking bad
+				children: [
+					image({
+						src: 'https://kucheriavyi.ru/images/slides/atm.jpg',
+						style: {
+							aspectRatio: 1000 / 786,
+						},
+					}),
+				],
+			}),
 			clients: layout({
 				style: ['card', 'p_5'],
-			}), // TODO: Cat on slim tv
+				children: [
+					image({
+						src: 'https://kucheriavyi.ru/images/slides/slim22.jpg',
+						style: {
+							aspectRatio: 980 / 684,
+						},
+					}),
+				],
+			}),
 			exclusive: layout({
 				style: ['card', 'p_5'],
 				children: [

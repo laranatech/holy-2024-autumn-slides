@@ -31,6 +31,8 @@ class SlidesPage extends Page {
 		'https://kucheriavyi.ru/images/slides/only-fans.jpg',
 		'https://kucheriavyi.ru/images/slides/engines.png',
 		'https://kucheriavyi.ru/images/slides/loopa.png',
+		'https://kucheriavyi.ru/images/slides/atm.jpg',
+		'https://kucheriavyi.ru/images/slides/slim22.jpg',
 	]
 
 	focused = 'body'

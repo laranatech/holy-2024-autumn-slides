@@ -60,12 +60,17 @@ class ChartsSlideComponent extends SlideComponent {
 				layout({
 					style: ['column', 'gap_1', { size: 9 }],
 					children: [
-						[
-							barChartCode,
-							barChartExample,
-							lineChartCode,
-							lineChartExample,
-						][this.step - 1],
+						layout({
+							style: ['card', 'p_5'],
+							children: [
+								[
+									barChartCode,
+									barChartExample,
+									lineChartCode,
+									lineChartExample,
+								][this.step - 1],
+							],
+						}),
 					],
 				}),
 			],
