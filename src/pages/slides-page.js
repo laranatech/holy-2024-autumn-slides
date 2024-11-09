@@ -1,5 +1,11 @@
 const {
-	Page, text, layout, keypress, progressBar, button, qrcode, img,
+	Page,
+	text,
+	layout,
+	keypress,
+	progressBar,
+	button,
+	img,
 	image,
 } = require('larana-js')
 
@@ -11,33 +17,34 @@ class SlidesPage extends Page {
 	}
 
 	images = [
-		'https://kucheriavyi.ru/images/slides/wink_1.webp',
-		'https://kucheriavyi.ru/images/slides/portrait_1.webp',
-		'https://kucheriavyi.ru/images/slides/vueact.png',
-		'https://kucheriavyi.ru/images/slides/larana-suit.jpg',
-		'https://kucheriavyi.ru/images/slides/techmeetup.jpg',
-		'https://kucheriavyi.ru/images/slides/techmeetup_fun.jpg',
-		'https://kucheriavyi.ru/images/slides/techmeetup_sad.jpg',
-		'https://kucheriavyi.ru/images/slides/point.jpg',
-		'https://larana.tech/larana.svg',
-		'https://kucheriavyi.ru/images/slides/money_full.jpg',
-		'https://kucheriavyi.ru/images/slides/money_empty.jpg',
-		'https://kucheriavyi.ru/images/slides/point_larana.jpg',
-		'https://kucheriavyi.ru/images/slides/seo.jpeg',
-		'https://kucheriavyi.ru/images/slides/maul.jpg',
-		'https://kucheriavyi.ru/images/slides/hypejs.jpg',
-		'https://kucheriavyi.ru/images/slides/designer.png',
-		'https://kucheriavyi.ru/images/slides/coder-designer.jpg',
-		'https://kucheriavyi.ru/images/slides/only-fans.jpg',
-		'https://kucheriavyi.ru/images/slides/engines.png',
-		'https://kucheriavyi.ru/images/slides/loopa.png',
-		'https://kucheriavyi.ru/images/slides/atm.jpg',
-		'https://kucheriavyi.ru/images/slides/slim22.jpg',
+		'/static/images/wink_1.webp',
+		'/static/images/portrait_1.webp',
+		'/static/images/vueact.png',
+		'/static/images/larana-suit.jpg',
+		'/static/images/techmeetup.jpg',
+		'/static/images/techmeetup_fun.jpg',
+		'/static/images/techmeetup_sad.jpg',
+		'/static/images/point.jpg',
+		'/static/images/larana.svg',
+		'/static/images/money_full.jpg',
+		'/static/images/money_empty.jpg',
+		'/static/images/point_larana.jpg',
+		'/static/images/seo.jpeg',
+		'/static/images/maul.jpg',
+		'/static/images/hypejs.jpg',
+		'/static/images/designer.png',
+		'/static/images/coder-designer.jpg',
+		'/static/images/only-fans.jpg',
+		'/static/images/engines.png',
+		'/static/images/loopa.png',
+		'/static/images/atm.jpg',
+		'/static/images/slim22.jpg',
 	]
 
 	focused = 'body'
 
 	// TODO: test in fullscreen
+	// TODO: rerender on fullscreen
 
 	init() {
 		const { initState } = this.useState()
@@ -87,8 +94,6 @@ class SlidesPage extends Page {
 	prepareTrafficConsumption() {
 		return [
 			{ value: 9999, label: 'Другие фреймворки', color: '#f00' },
-			// { value: 9999, label: 'Другие фреймворки 2', color: '#0ff', },
-			// { value: 19999, label: 'Другие фреймворки 3', color: '#ff0' },
 			{ value: 1, label: 'LaranaJS', color: '#3caa3c' },
 		]
 	}

@@ -17,9 +17,9 @@ class TechmeetupSlideComponent extends SlideComponent {
 						image({
 							style: { height: h * 0.85, aspectRatio: 1000 / 667 },
 							src: [
-								'https://kucheriavyi.ru/images/slides/techmeetup.jpg',
-								'https://kucheriavyi.ru/images/slides/techmeetup_fun.jpg',
-								'https://kucheriavyi.ru/images/slides/techmeetup_sad.jpg',
+								'/static/images/techmeetup.jpg',
+								'/static/images/techmeetup_fun.jpg',
+								'/static/images/techmeetup_sad.jpg',
 							][this.step-1],
 						}),
 						layout({}),

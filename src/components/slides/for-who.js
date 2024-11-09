@@ -26,7 +26,7 @@ class ForWhoSlideComponent extends ListNContentSlideComponent {
 				style: ['card', 'p_5'],
 				children: [
 					image({
-						src: 'https://kucheriavyi.ru/images/slides/atm.jpg',
+						src: '/static/images/atm.jpg',
 						style: {
 							aspectRatio: 1000 / 786,
 						},
@@ -37,7 +37,7 @@ class ForWhoSlideComponent extends ListNContentSlideComponent {
 				style: ['card', 'p_5'],
 				children: [
 					image({
-						src: 'https://kucheriavyi.ru/images/slides/slim22.jpg',
+						src: '/static/images/slim22.jpg',
 						style: {
 							aspectRatio: 980 / 684,
 						},
@@ -48,7 +48,7 @@ class ForWhoSlideComponent extends ListNContentSlideComponent {
 				style: ['card', 'p_5'],
 				children: [
 					image({
-						src: 'https://kucheriavyi.ru/images/slides/only-fans.jpg',
+						src: '/static/images/only-fans.jpg',
 						style: {
 							aspectRatio: 1138 / 1012,
 						},
@@ -65,7 +65,7 @@ class ForWhoSlideComponent extends ListNContentSlideComponent {
 				style: ['card', 'p_5'],
 				children: [
 					image({
-						src: 'https://kucheriavyi.ru/images/slides/engines.png',
+						src: '/static/images/engines.png',
 						style: {
 							aspectRatio: 953 / 576,
 						},

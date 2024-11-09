@@ -14,7 +14,7 @@ class TitleSlideComponent extends SlideComponent {
 						// 	style: { width: 749 },
 						// }),
 						image({
-							src: 'https://larana.tech/larana.svg',
+							src: 'http://localhost:1610/static/images/larana.svg',
 						}),
 					],
 				}),

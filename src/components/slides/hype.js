@@ -17,7 +17,7 @@ class HypeSlideComponent extends SlideComponent {
 						layout({}),
 						image({
 							style: { height: h * 0.85, aspectRatio: 1280 / 720 },
-							src: 'https://kucheriavyi.ru/images/slides/hypejs.jpg',
+							src: '/static/images/hypejs.jpg',
 						}),
 						layout({}),
 					],

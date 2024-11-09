@@ -17,7 +17,7 @@ class SeoSlideComponent extends SlideComponent {
 						layout({}),
 						image({
 							style: { height: h * 0.85, aspectRatio: 640 / 427 },
-							src: 'https://kucheriavyi.ru/images/slides/seo.jpeg',
+							src: '/static/images/seo.jpeg',
 						}),
 						layout({}),
 					],

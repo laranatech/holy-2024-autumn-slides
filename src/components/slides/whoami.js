@@ -26,7 +26,7 @@ class WhoamiSlideComponent extends ListNContentSlideComponent {
 			children: [
 				layout({}),
 				image({
-					src: `https://kucheriavyi.ru/images/slides/${ this.step === 9 ? 'wink' : 'portrait' }_1.webp`,
+					src: `/static/images/${ this.step === 9 ? 'wink' : 'portrait' }_1.webp`,
 					style: { width: 460, aspectRatio: 9 / 16 },
 				}),
 			],

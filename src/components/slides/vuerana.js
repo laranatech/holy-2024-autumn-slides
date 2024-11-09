@@ -42,7 +42,7 @@ class VueranaSlideComponent extends SlideComponent {
 								children: [
 									image({
 										style: { width: w * 0.99, aspectRatio: 1350 / 517 },
-										src: 'https://kucheriavyi.ru/images/slides/vueact.png',
+										src: '/static/images/vueact.png',
 									}),
 								],
 							}),

@@ -11,19 +11,19 @@ class CommunitySlideComponent extends SlideComponent {
 					children: [
 						image({
 							style: { size: 2 },
-							src: 'https://kucheriavyi.ru/images/slides/larana-suit.jpg', // TODO
+							src: '/static/images/larana-suit.jpg', // TODO:
 						}),
 						image({
 							style: { size: 2 },
-							src: 'https://kucheriavyi.ru/images/slides/larana-suit.jpg', // TODO
+							src: '/static/images/larana-suit.jpg', // TODO:
 						}),
 						image({
 							style: { size: 2 },
-							src: 'https://kucheriavyi.ru/images/slides/larana-suit.jpg', // TODO
+							src: '/static/images/larana-suit.jpg', // TODO:
 						}),
 						image({
 							style: { size: 2 },
-							src: 'https://kucheriavyi.ru/images/slides/larana-suit.jpg',
+							src: '/static/images/larana-suit.jpg',
 						}),
 					],
 				}),

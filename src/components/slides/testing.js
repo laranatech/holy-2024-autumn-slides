@@ -14,15 +14,15 @@ class TestingSlideComponent extends SlideComponent {
 					children: [
 						text({
 							style: 'h2',
-							value: 'Использование стейта в тестах', // TODO
+							value: 'Использование стейта в тестах', // TODO:
 						}),
 						text({
 							style: 'h2',
-							value: 'скриншотные тесты', // TODO
+							value: 'скриншотные тесты', // TODO:
 						}),
 						text({
 							style: 'h2',
-							value: 'скриншотные тесты с чексуммой', // TODO
+							value: 'скриншотные тесты с чексуммой', // TODO:
 						}),
 					],
 				}),

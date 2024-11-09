@@ -15,7 +15,7 @@ class MoneySlideComponent extends SlideComponent {
 							children: [
 								image({
 									style: { width: 680, aspectRatio: 680 / 661 },
-									src: 'https://kucheriavyi.ru/images/slides/money_empty.jpg',
+									src: '/static/images/money_empty.jpg',
 								}),
 								text({ value: 'Other devs', style: 'h1' }),
 							],
@@ -25,7 +25,7 @@ class MoneySlideComponent extends SlideComponent {
 							children: [
 								image({
 									style: { width: 680, aspectRatio: 680 / 661 },
-									src: 'https://kucheriavyi.ru/images/slides/money_full.jpg',
+									src: '/static/images/money_full.jpg',
 								}),
 								text({ value: 'Larana Devs', style: 'h1' }),
 							],

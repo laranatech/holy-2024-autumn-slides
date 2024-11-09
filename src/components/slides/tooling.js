@@ -14,23 +14,27 @@ class ToolingSlideComponent extends SlideComponent {
 					children: [
 						text({
 							style: 'h2',
-							value: 'npm init larana-js', // TODO
+							value: 'npm init larana-js', // TODO:
 						}),
 						text({
 							style: 'h2',
-							value: 'schemer', // TODO
+							value: 'schemer', // TODO:
 						}),
 						text({
 							style: 'h2',
-							value: 'logger', // TODO
+							value: 'logger', // TODO:
 						}),
 						text({
 							style: 'h2',
-							value: 'testing', // TODO
+							value: 'testing', // TODO:
 						}),
 						text({
 							style: 'h2',
-							value: 'designer', // TODO
+							value: 'Laranigma', // TODO:
+						}),
+						text({
+							style: 'h2',
+							value: 'larana-cli', // TODO:
 						}),
 					],
 				}),

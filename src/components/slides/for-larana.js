@@ -14,7 +14,7 @@ class ForLaranaSlideComponent extends SlideComponent {
 						layout({}),
 						image({
 							style: { height: h * 0.85, aspectRatio: 1200 / 628 },
-							src: 'https://kucheriavyi.ru/images/slides/point_larana.jpg',
+							src: '/static/images/point_larana.jpg',
 						}),
 						layout({}),
 					],

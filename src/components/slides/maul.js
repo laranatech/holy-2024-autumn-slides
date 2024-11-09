@@ -17,7 +17,7 @@ class MaulSlideComponent extends SlideComponent {
 						layout({}),
 						image({
 							style: { height: h * 0.85, aspectRatio: 1280 / 720 },
-							src: 'https://kucheriavyi.ru/images/slides/maul.jpg',
+							src: '/static/images/maul.jpg',
 						}),
 						layout({}),
 					],

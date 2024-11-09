@@ -9,6 +9,6 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "larana-js": "^0.2.1"
+    "larana-js": "^0.2.3"
   }
 }

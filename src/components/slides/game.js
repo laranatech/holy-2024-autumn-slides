@@ -14,7 +14,7 @@ class GameSlideComponent extends SlideComponent {
 					children: [
 						text({
 							style: 'h2',
-							value: 'Тут будет демо игры', // TODO
+							value: 'Тут будет демо игры', // TODO:
 						}),
 						// text({
 						// 	style: 'h2',

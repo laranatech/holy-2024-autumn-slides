@@ -73,7 +73,7 @@ class TriggerSlideComponent extends ListNContentSlideComponent {
 				},
 				children: [
 					image({
-						src: 'https://kucheriavyi.ru/images/slides/loopa.png',
+						src: '/static/images/loopa.png',
 						style: {
 							aspectRatio: 2136 / 1308,
 							width: 1200,
@@ -83,7 +83,7 @@ class TriggerSlideComponent extends ListNContentSlideComponent {
 			}),
 			build: layout({
 				style: ['card', 'p_5'],
-			}), // TODO
+			}), // TODO:
 			html: code({
 				value: [
 					'<ul>',
@@ -111,15 +111,15 @@ class TriggerSlideComponent extends ListNContentSlideComponent {
 				style: ['card', 'p_5'],
 				children: [
 					image({
-						src: 'https://kucheriavyi.ru/images/slides/coder-designer.jpg',
+						src: '/static/images/coder-designer.jpg',
 						style: {
 							aspectRatio: 1138 / 1012,
 						},
 					}),
 				],
 			}),
-			testing: layout({}), // TODO
-			misc: layout({}), // TODO
+			testing: layout({}), // TODO:
+			misc: layout({}), // TODO:
 			default: layout({}),
 		}
 
