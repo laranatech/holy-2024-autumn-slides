@@ -1,7 +1,9 @@
-const { text, layout } = require('larana-js')
+const { text, layout, list } = require('larana-js')
 const { SlideComponent } = require('./misc')
 
 class RealSSRSlideComponent extends SlideComponent {
+	static steps = 2
+
 	root() {
 		return layout({
 			children: [
@@ -12,9 +14,27 @@ class RealSSRSlideComponent extends SlideComponent {
 				layout({
 					style: ['column', 'gap_1', { size: 9 }],
 					children: [
-						text({
+						this.step === 1 ? text({
 							style: 'h0',
-							value: 'Фреймворк сам решает, как всё рендерить', // TODO: wiki quote
+							value: 'Фреймворк сам решает, как всё рендерить',
+						}) : layout({
+							style: ['card', 'column', 'gap_5', 'p_5'],
+							children: [
+								layout({}),
+								list({
+									style: ['gap_5'],
+									value: [
+										'Ре́ндеринг или отрисо́вка — процесс получения',
+										'изображения по модели с помощью',
+										'компьютерной программы.',
+									],
+									template: (line) => text({
+										value: line,
+										style: ['h0', { height: 'var:componentHeight' }],
+									}),
+								}),
+								layout({}),
+							],
 						}),
 					],
 				}),

@@ -38,12 +38,14 @@ class VueranaSlideComponent extends SlideComponent {
 						][this.step-1], style: 'h1' }),
 						[
 							layout({
-								style: { size: 9 },
+								style: { size: 9, direction: 'column' },
 								children: [
+									layout({}),
 									image({
 										style: { width: w * 0.99, aspectRatio: 1350 / 517 },
 										src: '/static/images/vueact.png',
 									}),
+									layout({}),
 								],
 							}),
 							vueranaCode,

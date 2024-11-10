@@ -22,7 +22,7 @@ module.exports = {
 	...require('./animations.js'),
 	...require('./charts.js'),
 	...require('./tooling.js'),
-	...require('./designer-2.js'),
+	...require('./designer.js'),
 	...require('./design-problems.js'),
 	...require('./testing.js'),
 	...require('./testing-problems.js'),
@@ -40,12 +40,3 @@ module.exports = {
 	...require('./for-larana.js'),
 	...require('./contacts.js'),
 }
-
-
-/**
- * слишком продаю
- * слишком серьёзно -> сделать смешно
- * больше философии, визионерства
- * больше угара
- * светлое будущее лараны
- */

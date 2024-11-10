@@ -14,8 +14,8 @@ class WhatIsLaranaSlideComponent extends SlideComponent {
 				list({
 					style: { size: 9 },
 					value: [
-						'Larana — философия', // TODO:
-						'LaranaJS — имплементация', // TODO:
+						'Larana — философия',
+						'LaranaJS — имплементация',
 					],
 					offset: 0,
 					limit: this.step -1,

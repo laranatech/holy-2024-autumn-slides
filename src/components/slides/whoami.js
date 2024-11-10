@@ -22,12 +22,13 @@ class WhoamiSlideComponent extends ListNContentSlideComponent {
 	}
 
 	content() {
+		const { h } = this.useResolution()
 		return layout({
 			children: [
 				layout({}),
 				image({
 					src: `/static/images/${ this.step === 9 ? 'wink' : 'portrait' }_1.webp`,
-					style: { width: 460, aspectRatio: 9 / 16 },
+					style: { height: h * 0.85, aspectRatio: 9 / 16 },
 				}),
 			],
 		})

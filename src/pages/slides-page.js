@@ -47,7 +47,6 @@ class SlidesPage extends Page {
 
 	focused = 'body'
 
-	// TODO: test in fullscreen
 	// TODO: rerender on fullscreen
 
 	init() {

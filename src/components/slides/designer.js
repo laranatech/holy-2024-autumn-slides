@@ -1,33 +1,25 @@
-const { text, layout } = require('larana-js')
-const { SlideComponent } = require('../slide.js')
+const { text, layout, image } = require('larana-js')
+const { SlideComponent } = require('./misc')
 
 class DesignerSlideComponent extends SlideComponent {
 	root() {
+		const { h } = this.useResolution()
+
 		return layout({
 			children: [
 				text({
 					style: 'h1',
-					value: 'UIDesigner',
+					value: 'Laranigma (Скоро)',
 				}),
 				layout({
-					style: ['column', 'gap_1', { size: 9 }],
+					style: { size: 9 },
 					children: [
-						text({
-							style: 'h2',
-							value: '- Встроенный инструмент типа фигмы',
+						layout({}),
+						image({
+							style: { height: h * 0.85, aspectRatio: 1280 / 720 },
+							src: '/static/images/designer.png',
 						}),
-						text({
-							style: 'h2',
-							value: '- Дизайнер рисует руками и получает на выходе готовый код, который сразу сохраняется в файлы',
-						}),
-						text({
-							style: 'h2',
-							value: '- Рендерится всё сразу на движке лараны, поэтому никаких расхождений',
-						}),
-						text({
-							style: 'h2',
-							value: '- LowCode, но весь код остаётся у вас, а не на закрытом сервере, поэтому его легко менять',
-						}),
+						layout({}),
 					],
 				}),
 			],

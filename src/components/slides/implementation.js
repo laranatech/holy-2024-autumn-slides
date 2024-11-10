@@ -17,8 +17,8 @@ class ImplementationSlideComponent extends SlideComponent {
 					offset: 0,
 					limit: this.step,
 					value: [
-						'Похожие инструменты', // TODO:
-						'Другой результат', // TODO:
+						'Похожие инструменты',
+						'Другой результат',
 					],
 					template: (line) => text({
 						style: ['h0'],
