@@ -4,11 +4,11 @@ const { ListNContentSlideComponent } = require('./misc')
 class WhoamiSlideComponent extends ListNContentSlideComponent {
 	static steps = 9
 
-	getTitle() {
+	title() {
 		return 'Женя Кучерявый'
 	}
 
-	getList() {
+	items() {
 		return [
 			{ value: 'portrait', label: 'Программировал 10+ лет' },
 			{ value: 'portrait', label: 'Поднимал и ронял стартапы' },
@@ -21,7 +21,7 @@ class WhoamiSlideComponent extends ListNContentSlideComponent {
 		]
 	}
 
-	getContent() {
+	content() {
 		return layout({
 			children: [
 				layout({}),

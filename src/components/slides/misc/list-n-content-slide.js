@@ -2,15 +2,15 @@ const { text, layout, list } = require('larana-js')
 const { SlideComponent } = require('./slide.js')
 
 class ListNContentSlideComponent extends SlideComponent {
-	getTitle() {
+	title() {
 		return 'No title'
 	}
 
-	getList() {
+	items() {
 		return []
 	}
 
-	getContent() {
+	content() {
 		return layout({})
 	}
 
@@ -34,21 +34,21 @@ class ListNContentSlideComponent extends SlideComponent {
 			children: [
 				text({
 					style: 'h1',
-					value: this.getTitle(),
+					value: this.title(),
 				}),
 				layout({
 					style: { size: 9 },
 					children: [
 						list({
 							style: ['gap_5', 'p_5'],
-							value: this.getList(),
+							value: this.items(),
 							offset: 0,
 							limit: this.step - 1,
 							template: this.getTemplate(),
 						}),
 						layout({
 							children: [
-								this.getContent(),
+								this.content(),
 							],
 						}),
 					],

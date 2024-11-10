@@ -39,6 +39,10 @@ class SlidesPage extends Page {
 		'/static/images/loopa.png',
 		'/static/images/atm.jpg',
 		'/static/images/slim22.jpg',
+		'/static/images/community_01.jpg',
+		'/static/images/community_02.jpg',
+		'/static/images/scream.png',
+		'/static/images/long-list.jpg',
 	]
 
 	focused = 'body'

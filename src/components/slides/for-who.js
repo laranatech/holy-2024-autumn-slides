@@ -1,25 +1,29 @@
-const { layout, image, text } = require('larana-js')
+const { layout, image, text, list, radio } = require('larana-js')
 const { ListNContentSlideComponent } = require('./misc')
 
 class ForWhoSlideComponent extends ListNContentSlideComponent {
-	static steps = 6
+	static steps = 10
 
-	getTitle() {
+	title() {
 		return 'Кому нужна Larana'
 	}
 
-	getList() {
+	items() {
 		return [
 			{ value: 'atms', label: 'Банкоматы' },
 			{ value: 'clients', label: 'Тонкие клиенты' },
 			{ value: 'exclusive', label: 'Платформы с экслюзивным и платным контентом' },
+			{ value: 'quiz', label: 'Тестирования и опросы' },
 			{ value: 'streaming', label: 'Стриминг' },
 			{ value: 'games', label: 'Игры' },
+			{ value: 'startups', label: 'Стартапы' },
+			{ value: 'banners', label: 'Баннеры' },
+			{ value: 'slides', label: 'Презентации' },
 		]
 	}
 
-	getContent() {
-		const l = this.getList()
+	content() {
+		const l = this.items()
 
 		const rightPart = {
 			atms: layout({
@@ -41,6 +45,42 @@ class ForWhoSlideComponent extends ListNContentSlideComponent {
 						style: {
 							aspectRatio: 980 / 684,
 						},
+					}),
+				],
+			}),
+			quiz: layout({
+				style: ['card', 'p_5', 'column', 'gap_5'],
+				children: [
+					text({
+						value: 'Что такое Larana?',
+						style: 'h0',
+					}),
+					list({
+						style: ['size_5', 'gap_5'],
+						value: [
+							'Фреймворк',
+							'Протокол',
+							'Библиотека',
+							'Философия',
+						],
+						template: (item) => layout({
+							style: ['hug', 'gap_5'],
+							children: [
+								layout({}),
+								radio({
+									model: 'quiz',
+									name: item,
+									style: {
+										fg: item === 'Философия' ? 'var:accent' : '#f00',
+									},
+								}),
+								text({
+									value: item,
+									style: ['h1', 'ta_start'],
+								}),
+								layout({}),
+							],
+						}),
 					}),
 				],
 			}),
@@ -70,6 +110,33 @@ class ForWhoSlideComponent extends ListNContentSlideComponent {
 							aspectRatio: 953 / 576,
 						},
 					}),
+				],
+			}),
+			startups: layout({
+				style: ['card', 'p_5'],
+				children: [
+					image({
+						src: '/static/images/scream.png',
+						style: {
+							aspectRatio: 953 / 576,
+						},
+					}),
+				],
+			}),
+			banners: layout({
+				style: ['card', 'p_5', 'column'],
+				children: [
+					layout({ style: { size: 2 }}),
+					text({ value: 'Для создания фреймворка', style: 'h0' }),
+					text({ value: 'нужен всего лишь простой', style: 'h0' }),
+					text({ value: 'советский копеечный...', style: 'h0' }),
+					layout({ style: { size: 2 }}),
+				],
+			}),
+			slides: layout({
+				style: ['card', 'p_5'],
+				children: [
+					text({ value: 'Вы здесь', style: 'h0' }),
 				],
 			}),
 			default: layout({}),

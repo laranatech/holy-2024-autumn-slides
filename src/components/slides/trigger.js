@@ -4,18 +4,18 @@ const { ListNContentSlideComponent } = require('./misc')
 class TriggerSlideComponent extends ListNContentSlideComponent {
 	static steps = 10
 
-	getTitle() {
+	title() {
 		return 'Зачем нужен ещё один фреймворк?'
 	}
 
-	getList() {
+	items() {
 		const { state } = this.useState()
 
 		return state.problems
 	}
 
-	getContent() {
-		const problems = this.getList()
+	content() {
+		const problems = this.items()
 
 		const rightPart = {
 			load: layout({
@@ -83,7 +83,10 @@ class TriggerSlideComponent extends ListNContentSlideComponent {
 			}),
 			build: layout({
 				style: ['card', 'p_5'],
-			}), // TODO:
+				children: [
+					text({ value: 'Code in the Dark', style: 'h0' }),
+				],
+			}),
 			html: code({
 				value: [
 					'<ul>',
@@ -118,8 +121,26 @@ class TriggerSlideComponent extends ListNContentSlideComponent {
 					}),
 				],
 			}),
-			testing: layout({}), // TODO:
-			misc: layout({}), // TODO:
+			testing: layout({
+				style: ['card', 'p_5', 'column'],
+				children: [
+					layout({ style: { size: 4 }}),
+					text({ value: 'Заходит тестировщик', style: 'h0' }),
+					text({ value: 'в бар...', style: 'h0' }),
+					layout({ style: { size: 4 }}),
+				],
+			}),
+			misc: layout({
+				style: ['card', 'p_5'],
+				children: [
+					image({
+						src: '/static/images/long-list.jpg',
+						style: {
+							aspectRatio: 864 / 720,
+						},
+					}),
+				],
+			}),
 			default: layout({}),
 		}
 

@@ -9,7 +9,7 @@ class DesignerSlideComponent extends SlideComponent {
 			children: [
 				text({
 					style: 'h1',
-					value: 'Laranigma',
+					value: 'Laranigma (Скоро)',
 				}),
 				layout({
 					style: { size: 9 },

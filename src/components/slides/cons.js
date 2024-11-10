@@ -3,11 +3,11 @@ const { ListNContentSlideComponent } = require('./misc')
 class ConsSlideComponent extends ListNContentSlideComponent {
 	static steps = 2
 
-	getTitle() {
+	title() {
 		return 'Недостатки'
 	}
 
-	getList() {
+	items() {
 		return [
 			{ label: 'Game changer' },
 		]
