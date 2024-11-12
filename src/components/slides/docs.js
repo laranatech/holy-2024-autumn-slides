@@ -9,25 +9,9 @@ class DocsSlideComponent extends SlideComponent {
 				layout({
 					style: { size: 9, gap: 16 },
 					children: [
+						layout({}),
 						layout({
-							style: ['card', 'p_5', 'column', 'gap_2'],
-							children: [
-								layout({
-									style: { size: 9 },
-									children: [
-										layout({}),
-										qr({
-											style: { size: 9 },
-											value: 'https://js-docs.larana.tech',
-										}),
-										layout({}),
-									],
-								}),
-								text({ style: 'h0', value: 'https://js-docs.larana.tech' }),
-							],
-						}),
-						layout({
-							style: ['card', 'p_5', 'column', 'gap_2'],
+							style: ['card', 'p_5', 'column', 'gap_2', 'size_2'],
 							children: [
 								layout({
 									style: { size: 9 },
@@ -43,6 +27,7 @@ class DocsSlideComponent extends SlideComponent {
 								text({ style: 'h0', value: '@laranatech' }),
 							],
 						}),
+						layout({}),
 					],
 				}),
 			],

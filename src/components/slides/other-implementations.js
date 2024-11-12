@@ -49,7 +49,7 @@ class OtherImplementationsSlideComponent extends SlideComponent {
 							children: [
 								this.card({ i: 1, lang: 'JavaScript', title: 'LaranaJS', bg: '#f7df1e', fg: '#000' }),
 								this.card({ i: 2, lang: 'Rust', title: 'LaranaRS', bg: '#e43716', fg: '#000' }),
-								this.card({ i: 3, lang: 'Java', title: 'Javarana', bg: '#0d6eb5', fg: '#e01e22' }),
+								this.card({ i: 3, lang: 'Java', title: 'Javarana', bg: '#0d6eb5', fg: '#fff' }),
 							],
 						}),
 						layout({

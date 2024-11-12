@@ -101,7 +101,7 @@ class TriggerSlideComponent extends ListNContentSlideComponent {
 			js: code({
 				lineNumbers: false,
 				value: [
-					`> const numbers = [1,3, 2, 5, 11, 300]`,
+					`> const numbers = [1, 3, 2, 5, 11, 300]`,
 					`> numbers.sort()`,
 					`< [1, 11, 2, 3, 300, 5]`,
 					'',

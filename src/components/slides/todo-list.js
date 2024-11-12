@@ -52,14 +52,21 @@ class TODOListSlideComponent extends SlideComponent {
 		return layout({
 			style: ['column', 'gap_2'],
 			children: [
-				list({
-					style: ['size_5', 'p_2', { borderColor: 'var:componentBorderColor' }],
-					model: 'todoItems',
-					template: (item, i) => new TodoItemComponent({
-						item,
-						onDone: () => this.toggleItem(item, i),
-						onDelete: () => this.deleteItem(item, i),
-					}),
+				layout({
+					style: 'size_5',
+					children: [
+						layout({}),
+						list({
+							style: ['size_5', 'p_3', 'gap_3', 'radius', { borderColor: 'var:componentBorderColor' }],
+							model: 'todoItems',
+							template: (item, i) => new TodoItemComponent({
+								item,
+								onDone: () => this.toggleItem(item, i),
+								onDelete: () => this.deleteItem(item, i),
+							}),
+						}),
+						layout({}),
+					],
 				}),
 				layout({
 					style: 'gap_2',
