@@ -50,17 +50,12 @@ class TriggerSlideComponent extends ListNContentSlideComponent {
 				children: [
 					donutChart({
 						value: [
-							{ value: 18, label: '1366x768', color: '#577ab7' },
-							{ value: 12, label: '1920x1080', color: '#e25c4c' },
-							{ value: 9, label: '360x640', color: '#f4a43b' },
-							{ value: 4, label: '1280x1024', color: '#279952' },
-							{ value: 4, label: '1440x900', color: '#8c3189' },
-							{ value: 3, label: '360x720', color: '#1d8bb3' },
-							{ value: 2, label: '375x667', color: '#c7406d' },
-							{ value: 2, label: '360x780', color: '#59973c' },
-							{ value: 1, label: '1024x768', color: '#a62f2e' },
-							{ value: 15, label: 'Другие', color: '#2e6189' },
-						
+							{ value: 66.68, label: 'Chrome', color: '#577ab7' },
+							{ value: 18.07, label: 'Safari', color: '#e25c4c' },
+							{ value: 5.25, label: 'Edge', color: '#f4a43b' },
+							{ value: 2.65, label: 'Firefox', color: '#279952' },
+							{ value: 2.23, label: 'Samsung Internet', color: '#8c3189' },
+							{ value: 2.2, label: 'Opera', color: '#1d8bb3' },
 						],
 					}),
 				],

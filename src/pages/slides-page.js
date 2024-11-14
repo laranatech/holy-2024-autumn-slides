@@ -212,7 +212,7 @@ class SlidesPage extends Page {
 						layout({
 							style: { size: 0, width: 0, height: 0 },
 							children: [
-								...this.images.map((v) => image({ src: v })),
+								// ...this.images.map((v) => image({ src: v })),
 							],
 						}),
 					],

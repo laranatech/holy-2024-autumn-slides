@@ -5,10 +5,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Evgenii Kucheriavyi",
+  "license": "MIT",
   "description": "",
   "dependencies": {
-    "larana-js": "^0.2.3"
+    "larana-js": "^0.2.5"
   }
 }
