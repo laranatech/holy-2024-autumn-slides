@@ -28,7 +28,7 @@ class TodoItemComponent extends BaseComponent {
 			children: [
 				text({
 					value: this.item.label,
-					style: ['text', { size: 9 }],
+					style: ['text', 'h1', { size: 9 }],
 				}),
 				layout({
 					style: ['gap_2', { height: 'var:componentHeight' }],

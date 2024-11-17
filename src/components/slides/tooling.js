@@ -15,7 +15,7 @@ class ToolingSlideComponent extends ListNContentSlideComponent {
 			{ value: 'schemer', label: 'schemer' },
 			{ value: 'exporter', label: 'exporter' },
 			{ value: 'testing', label: 'testing' },
-			{ value: 'laranigma', label: 'Laranigma' },
+			{ value: 'laranigma', label: 'Ligma' },
 		]
 	}
 
